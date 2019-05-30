@@ -12,10 +12,20 @@
             }
         }
     }
+    .lg-img{
+        img{
+            width: 32px;
+        }
+    }
 }
 @media screen and (min-width: $sm) {
     nav{
         background: transparent;       
+    }
+    .lg-img{
+        img{
+            width: 24px;
+        }
     }
 }
 @media screen and (min-width: $md) {
