@@ -1,0 +1,122 @@
+//flic
+
+.flickity-viewport{
+    width: 100%;
+}
+.flickity-prev-next-button {
+    top: calc(100% + 24px);
+    background: none!important;
+    svg{
+        fill: #596477;
+        &:focus{
+            fill: #CC8E6A;
+            background: none;
+            outline: none;
+            box-shadow: none;
+        }
+        &:active{
+            fill: #CC8E6A;
+            background: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+}
+.flickity-prev-next-button.next {
+    top: calc(100% + 10px);
+    right: auto;
+    left: 50px;
+}
+
+body{
+    font-family: $font;
+    color: $grey;
+    background: $black;
+}
+.bold{
+    font-weight: bold;
+}
+h1{
+    font-size: 24px;
+    margin: 16px 0 32px 0;
+    line-height: 32px;
+}
+p{
+    font-size: 16px;
+    line-height: 24px;
+}
+hr{
+    border: 1px dashed #95A2BB;
+}
+
+//NAVS PILLS
+#pills-tab{
+    .nav-item{
+        margin: 32px 0 24px 0;
+        .nav-link{
+            background: none;
+            font-size: 24px;
+            line-height: 24px;
+            color: #5F6777;
+            padding: 0 8px;
+        }
+        &:last-child{
+            padding: 0px;
+            margin-left: -8px;
+        }
+        .active{
+            font-weight: bold;
+            color: $ouro;
+        }
+    }    
+}
+
+#works{
+    .work-img{
+        width: 100%;
+        height: 216px;
+        background: #58606E;      
+        margin: 16px 0;
+    }
+}
+#repository{
+    margin-bottom: 32px;
+}
+.btn-secondary{
+    display: none;
+    background: none;
+    border: none;
+    color: #596477;
+    font-weight: bold;
+    margin-bottom: 32px;
+    &:focus{
+        color: #CC8E6A;
+        background: none;
+        outline: none;
+        box-shadow: none;
+    }
+    &:active{
+        color: #CC8E6A;
+        background: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+}
+.avatar{
+    float: right;
+    margin: 15px -15px 15px 32px;
+}
+footer{
+    margin-top: 16px;
+    background: #191B22;
+    height: 16px;
+    width: 100%;
+}
+a{
+    color: $grey;
+    &:hover{
+        color: #CC8E6A;
+    }
+}
