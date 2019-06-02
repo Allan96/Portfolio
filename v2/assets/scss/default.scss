@@ -1,43 +1,43 @@
-@media screen and (min-width: $xs) {
-}
-@media screen and (min-width: $sm) {
-}
-@media screen and (min-width: $md) {
-}
+@media screen and (min-width: $xs) {}
+
+@media screen and (min-width: $sm) {}
+
+@media screen and (min-width: $md) {}
+
 @media screen and (min-width: $lg) {
-    h1{
+    h1 {
         margin-top: 32px;
         font-size: 32px;
         line-height: 40px;
     }
-    p{
-        font-size: 24px;
-        line-height: 32px;
-    }
-    hr{
+    // p {
+    //     font-size: 24px;
+    //     line-height: 32px;
+    // }
+    hr {
         margin: 42px 0;
     }
-    .main-carousel{
+    .main-carousel {
         font-size: 24px;
         line-height: 24px;
     }
-    .work-img{
+    .work-img {
         padding: 32px;
-        p{
+        p {
             font-size: 16px;
-            line-height: 24px; 
+            line-height: 24px;
         }
-        
-
     }
-    .btn-secondary{
+    .btn-secondary {
         font-weight: bold;
         font-size: 32px;
         line-height: 24px;
+        margin-bottom: 16px;
     }
-    .b-dashed{
+    .b-dashed {
         border-right: 1px dashed #95A2BB;
+        min-height: 190px;
     }
 }
-@media screen and (min-width: $xl) {
-}
+
+@media screen and (min-width: $xl) {}

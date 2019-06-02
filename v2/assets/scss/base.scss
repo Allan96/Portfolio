@@ -1,122 +1,158 @@
 //flic
-
-.flickity-viewport{
+.flickity-viewport {
     width: 100%;
 }
+
 .flickity-prev-next-button {
-    top: calc(100% + 24px);
+    top: calc(100% + 10px);
     background: none!important;
-    svg{
+    svg {
         fill: #596477;
-        &:focus{
+        &:focus {
             fill: #CC8E6A;
             background: none;
             outline: none;
             box-shadow: none;
         }
-        &:active{
+        &:active {
             fill: #CC8E6A;
             background: none;
             outline: none;
             box-shadow: none;
         }
     }
-
 }
+
 .flickity-prev-next-button.next {
-    top: calc(100% + 10px);
+    top: calc(100% - 5px);
     right: auto;
     left: 50px;
 }
 
-body{
+body {
     font-family: $font;
     color: $grey;
     background: $black;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
-h1{
+
+h1 {
     font-size: 24px;
     margin: 16px 0 32px 0;
     line-height: 32px;
 }
-p{
+
+p {
     font-size: 16px;
     line-height: 24px;
 }
-hr{
+
+hr {
     border: 1px dashed #95A2BB;
 }
 
 //NAVS PILLS
-#pills-tab{
-    .nav-item{
+#pills-tab {
+    .nav-item {
         margin: 32px 0 24px 0;
-        .nav-link{
+        .nav-link {
             background: none;
             font-size: 24px;
             line-height: 24px;
             color: #5F6777;
-            padding: 0 8px;
+            padding: 0px 20px 0px 0px;
         }
-        &:last-child{
+        &:last-child {
             padding: 0px;
             margin-left: -8px;
         }
-        .active{
+        .active {
             font-weight: bold;
             color: $ouro;
+            text-decoration: underline;
         }
-    }    
+    }
 }
 
-#works{
-    .work-img{
+.tab-content {
+    min-height: 280px;
+}
+
+#works {
+    .work-img {
         width: 100%;
         height: 216px;
-        background: #58606E;      
+        background: #58606E;
         margin: 16px 0;
     }
 }
-#repository{
-    margin-bottom: 32px;
+
+#repository {
+    margin-bottom: 24px;
+    #carouselExampleControls {
+        padding: 0 15px;
+        margin-top: 32px;
+    }
 }
-.btn-secondary{
+
+.btn-secondary {
     display: none;
     background: none;
     border: none;
     color: #596477;
     font-weight: bold;
     margin-bottom: 32px;
-    &:focus{
-        color: #CC8E6A;
-        background: none;
+    &:active,
+    &:focus,
+    &:hover {
+        color: $ouro;
+        background-color: transparent!important;
+        border-color: transparent!important;
+        box-shadow: none!important;
         outline: none;
-        box-shadow: none;
     }
-    &:active{
-        color: #CC8E6A;
-        background: none;
-        outline: none;
-        box-shadow: none;
-    }
-
 }
-.avatar{
+
+.avatar {
     float: right;
     margin: 15px -15px 15px 32px;
 }
-footer{
+
+footer {
     margin-top: 16px;
     background: #191B22;
     height: 16px;
     width: 100%;
 }
-a{
+
+a {
     color: $grey;
-    &:hover{
+    &:hover {
         color: #CC8E6A;
+    }
+}
+
+.zoom {
+    overflow: hidden;
+    height: 128px;
+    width: 128px;
+    float: right;
+}
+
+.zoom img {
+    max-width: 100%;
+    transition: all 1s;
+    margin-top: 0px;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    &:hover {
+        margin-top: 50px;
+        -moz-transform: scale(4);
+        -webkit-transform: scale(4);
+        transform: scale(4);
     }
 }
